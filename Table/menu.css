@@ -1,0 +1,23 @@
+body{
+    /* background-image: url(bgImg.jpg); */
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-color: rgba(135, 160, 180, 0.783);
+    align-content: center;
+    justify-content: center;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th,td{
+    padding: 10px;
+  }
+  table{
+    margin: 10px;
+    border-radius: 1%;
+    background-color: rgba(255, 255, 255, 0.690);
+    text-align: center;
+  }
