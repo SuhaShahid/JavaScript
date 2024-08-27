@@ -1,11 +1,11 @@
 body {
-  margin: 0;
+  margin: 0px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  padding: 0;
+  padding: 0px;
   background-repeat: no-repeat;
   background-color: rgba(188, 222, 249, 0.783);
-  align-content: center;
+  align-items: center;
   justify-content: center;
 }
 table,
@@ -27,12 +27,45 @@ tr:hover {
 
 th,
 td {
-  padding:10px 5px ;
+  padding: 10px 5px;
 }
 table {
   height: 90%;
-  margin: 10% auto;
+  margin: 6% auto;
   text-align: center;
   width: 80%;
   background-color: rgba(255, 255, 255, 0.69);
 }
+.header h2 {
+  text-align: center;
+  color: white;
+  padding: 10px 20px;
+}
+.header {
+  margin: 0px;
+  padding: 0%;
+  gap: 30%;
+  justify-content: space-between;
+  line-height: 30px;
+  background-color: #445968;
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  float: right;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+#search {
+  margin: 10px;
+  padding: 10px;
+}
+tr:nth-child(even) {
+  background: aliceblue;
+}
+tr:nth-child(odd) {
+  background: white;
+}
+
