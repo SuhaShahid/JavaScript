@@ -95,6 +95,7 @@ tbody tr:hover {
   color: #333333;
 }
 #pagination button:hover{
-  background-color: #2a737d;
+  background-color: #8fc3cae6;
   color: #ffffff;
+  border:1px solid black ;
 }
