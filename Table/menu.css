@@ -60,9 +60,6 @@ thead th {
   color: #ffffff;
 }
 
-tbody tr {
-  border-bottom: 1px solid #dddddd;
-}
 
 tbody tr:nth-child(even) {
   background-color: #f2f2f2;
@@ -76,4 +73,13 @@ tbody td {
 
 tbody tr:hover {
   background-color: #e9f1f1;
+}
+#pagination{
+  text-align: center;
+  justify-content: center;
+
+}
+#pagination a {
+  border: 1px solid black ;
+  padding: 5px;
 }
