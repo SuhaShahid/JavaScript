@@ -82,20 +82,21 @@ tbody td {
 tbody tr:hover {
   background-color: #e9f1f1;
 }
-#pagination{
-  text-align: center;
-  justify-content: center;
 
+
+#pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
+
 #pagination button {
-  border: 1px solid black ;
-  border-radius: 1%;
-  padding: 5px 10px;
-  background-color: #ffffff;
-  color: #333333;
-}
-#pagination button:hover{
-  background-color: #8fc3cae6;
-  color: #ffffff;
-  border:1px solid black ;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  margin: 0 4px;
+  background-color: white;
+  color: #017c8c;
+  cursor: pointer;
+  border-radius: 4px;
 }
