@@ -33,7 +33,15 @@ body {
   color: #ffffff;
 }
 
-.header .search input[type="search"] {
+#dropdown {
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+ .header .search input[type="search"] {
   padding: 8px;
   border: 1px solid #cccccc;
   border-radius: 4px;
@@ -79,7 +87,14 @@ tbody tr:hover {
   justify-content: center;
 
 }
-#pagination a {
+#pagination button {
   border: 1px solid black ;
-  padding: 5px;
+  border-radius: 1%;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  color: #333333;
+}
+#pagination button:hover{
+  background-color: #2a737d;
+  color: #ffffff;
 }
