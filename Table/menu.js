@@ -27,17 +27,11 @@ function generateUrl() {
     url = `https://dummyjson.com/products/category/${selectedCategory}?limit=${itemsPerPage}&skip=${skip}`;
   }
 
-  console.log("Generated URL:", url);
   return url;
 }
 
 function displayTable(data) {
   const tableBody = document.getElementById("table-body");
-
-  if (!data.length) {
-    tableBody.innerHTML = "<tr><td colspan='5'>No results found</td></tr>";
-    return;
-  }
 
   let tableContent = "";
   data.forEach((product) => {
@@ -54,7 +48,7 @@ function displayTable(data) {
 
   tableBody.innerHTML = tableContent;
 
-  addPagination(totalItems);
+  addingPagination(totalItems);
 }
 
 function filterTable() {
@@ -67,7 +61,7 @@ function updatePage(pageNumber) {
   fetchData(generateUrl());
 }
 
-function addPagination(totalItems) {
+function addingPagination(totalItems) {
   const totalPages = Math.ceil(totalItems / itemsPerPage);
   const paginationContainer = document.getElementById("pagination");
 
@@ -181,6 +175,11 @@ fetchCategories();
 //     });
 //     paginationContainer.appendChild(pageButton);
 //   }
+// }
+
+// if (!data.length) {
+//   tableBody.innerHTML = "<tr><td colspan='5'>No results found</td></tr>";
+//   return;
 // }
 
 // function sortByCategory() {
