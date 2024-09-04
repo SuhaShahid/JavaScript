@@ -17,7 +17,6 @@ function fetchData(url) {
 function generateUrl() {
   const searchValue = document.getElementById("search").value.toLowerCase();
   const selectedCategory = document.getElementById("dropdown").value;
-  const sortByRating = document.getElementById("filter");
   const skip = (currentPage - 1) * itemsPerPage;
 
   let url = `https://dummyjson.com/products?limit=${itemsPerPage}&skip=${skip}`;
@@ -33,10 +32,6 @@ function generateUrl() {
 function displayTable(data) {
   const tableBody = document.getElementById("table-body");
 
-  // if (!data.length) {
-  //   tableBody.innerHTML = "<tr><td colspan='5'>No results found</td></tr>";
-  //   return;
-  // }
   let tableContent = "";
   data.forEach((product) => {
     tableContent += `
@@ -106,15 +101,3 @@ document.getElementById("dropdown").addEventListener("change", () => {
 
 fetchData(generateUrl());
 fetchCategories();
-// filterTable();
-// function filterTable() {
-//   let filterBtn = document.createElement("button");
-//   filterBtn.innerHTML = "Sort By Rating";
-//   let filterContainer = document.getElementById("filter");
-//   filterContainer.appendChild(filterBtn)
-//   fetchData(generateUrl());
-// }
-// document.getElementById("filter").addEventListener("onclick",filterTable)
-// else if (sortByRating) {
-//   url = `https://dummyjson.com/products?sortBy=${sortByRating}&order=asc&limit=${itemsPerPage}&skip=${skip}`;
-// }
