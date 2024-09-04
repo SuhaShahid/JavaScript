@@ -33,6 +33,14 @@ body {
   color: #ffffff;
 }
 
+#filter button{
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #333333;
+}
+
 #dropdown {
   padding: 8px;
   border: 1px solid #cccccc;
