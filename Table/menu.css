@@ -5,15 +5,22 @@ body {
   margin: 0;
   padding: 20px;
 }
-
+.long {
+background-color: #E8B8CEff;
+height: 100px;
+/* --amaranth-pink: #E78EAEff;
+--fairy-tale: #E9C1D5ff;
+--powder-blue: #A2B4C9ff;
+--indian-red: #D0626Aff; */
+}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #017c8c;
   padding: 15px 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   margin-bottom: 20px;
 }
 
