@@ -28,7 +28,6 @@ function generateUrl() {
   }
   return url;
 }
-
 function displayTable(data) {
   const tableBody = document.getElementById("table-body");
 
@@ -37,18 +36,19 @@ function displayTable(data) {
     tableContent += `
       <tr>
         <td>${product.id}</td>
-        <td>${product.title}</td>
+        <td><a href="product.html">${product.title}</a></td>
         <td>${product.price}</td>
         <td>${product.category}</td>
         <td>${product.rating}</td>
-        </tr>
-        `;
+      </tr>
+    `;
   });
 
   tableBody.innerHTML = tableContent;
 
   addingPagination(totalItems);
 }
+
 
 function searchTable() {
   currentPage = 1;
