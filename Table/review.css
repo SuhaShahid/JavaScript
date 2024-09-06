@@ -12,7 +12,7 @@
   border: 1px solid rgb(0, 0, 0,0.1)     ;
   border-radius: 5px;
   background-color: #ffffff;
-  box-shadow: 0 0 12px rgba(21, 20, 20, 0.1);
+  box-shadow: 0 0 12px rgba(21, 20, 20, 0.11);
   padding: 15px;
   margin: 0 20px;
   text-align: left;
@@ -27,7 +27,7 @@ p {
   margin-bottom: 10px;
 }
 .reviewData:hover {
-     background: #f2f2f2;
+     background: rgb(224, 193, 193,0.1);
 }
 .btnContainer {
   display: flex;
