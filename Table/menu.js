@@ -9,6 +9,8 @@ function fetchData(url) {
     .then((data) => {
       totalItems = data.total;
       productsData = data.products;
+      console.log(data);
+      
       displayTable(productsData);
     })
     .catch((error) => console.error(error));
