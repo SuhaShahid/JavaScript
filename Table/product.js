@@ -1,16 +1,19 @@
+function fetchData() {
+  const productId = new URLSearchParams(window.location.search).get("id");
+  fetch(`https://dummyjson.com/products/${productId}`)
+    .then((res) => res.json())
+    .then((product) => {
+      displayProduct(product);
+    })
+    .catch((error) => console.error(error));
+    console.log(productId);
+    
+}
 
-     fetch(`https://dummyjson.com/products/1`)
-       .then((res) => res.json())
-       .then((productData) => {
-         displayProduct(productData);
-       })
-       .catch((error) => console.error(error));
+function displayProduct(product) {
+  let productContainer = document.querySelector(".productContainer");
 
-   
-   function displayProduct(product) {
-     let productContainer = document.querySelector(".productContainer");
-   
-     let content = `
+  let content = `
        <div class="container">
          <div class="imageContainer">
            <img src="${product.thumbnail}" alt="${product.title}" />
@@ -18,12 +21,16 @@
          <div class="details">
            <h1>${product.title}</h1>
            <h3>Price: $${product.price}</h3>
+           <h4>Rating: ${product.rating}</h4>
            <p id="prodDesc">${product.description}</p>
            <div class="addToCart">
-             <button>Add To Cart</button>
+             <button id=
+             "addToCartbtn">Add To Cart</button>
            </div>
          </div>
        </div>`;
-   
-     productContainer.innerHTML = content;
-   }
+
+  productContainer.innerHTML = content;
+}
+
+fetchData();

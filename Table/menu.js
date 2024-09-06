@@ -36,7 +36,7 @@ function displayTable(data) {
     tableContent += `
       <tr>
         <td>${product.id}</td>
-        <td><a href="product.html">${product.title}</a></td>
+        <td><a href="product.html?id=${product.id}" target='_blank' >${product.title}</a></td>
         <td>${product.price}</td>
         <td>${product.category}</td>
         <td>${product.rating}</td>
@@ -48,7 +48,6 @@ function displayTable(data) {
 
   addingPagination(totalItems);
 }
-
 
 function searchTable() {
   currentPage = 1;
