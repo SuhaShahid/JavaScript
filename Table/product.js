@@ -44,7 +44,7 @@ function displayProduct(product) {
                </div>
                `;
   });
-  let btnRev=`<button onclick="location.href='review.html' ">Add Review</button>`
+  let btnRev=`<button onclick="location.href='reviewForm.html' ">Add Review</button>`
   productContainer.innerHTML = content;
   reviewContainer.innerHTML = review;
   btnContainer.innerHTML= btnRev;
