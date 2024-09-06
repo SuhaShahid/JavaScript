@@ -101,11 +101,13 @@ tbody tr:hover {
   cursor: pointer;
   border-radius: 4px;
 }
-
-#pagination button:active{
+#pagination button.active {
   background-color: #017c8c;
   color: white;
 }
+
+#pagination button:hover:not(.active) {background-color: #ddd;}
+
 
 a{
   color: black;

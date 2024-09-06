@@ -1,0 +1,48 @@
+.reviewContainer {
+  display: flex;
+  padding: 30px 40px;
+  justify-content: space-around;
+}
+.reviewData {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  width: 30%;
+  border: 1px solid rgb(0, 0, 0,0.1)     ;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 0 12px rgba(21, 20, 20, 0.1);
+  padding: 15px;
+  margin: 0 20px;
+  text-align: left;
+}
+
+.reviewData h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.reviewData h4,
+p {
+  margin-bottom: 10px;
+}
+.reviewData:hover {
+     background: #f2f2f2;
+}
+.btnContainer {
+  display: flex;
+  margin-right:  40px;
+  float: right;
+  padding: 20px 0;
+}
+
+.btnContainer button {
+  padding: 12px 20px;
+  border-radius: 4px;
+  border: none;
+  background-color: #000;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

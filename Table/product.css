@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background-color: #f2f2f2;
   font-family: Arial, sans-serif;
 }
 
@@ -71,6 +71,7 @@ body {
   margin-bottom: 10px;
 }
 
+
 .addToCart {
   display: flex;
   justify-content: flex-start;
@@ -91,3 +92,4 @@ body {
 .addToCart button:hover {
   background-color: #444;
 }
+

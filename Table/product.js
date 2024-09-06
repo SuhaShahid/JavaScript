@@ -6,17 +6,17 @@ function fetchData() {
       displayProduct(product);
     })
     .catch((error) => console.error(error));
-    console.log(productId);
-    
+  console.log(productId);
 }
 
 function displayProduct(product) {
   let productContainer = document.querySelector(".productContainer");
-
+  let reviewContainer = document.querySelector(".reviewContainer");
+  let btnContainer = document.querySelector(".btnContainer")
   let content = `
-       <div class="container">
-         <div class="imageContainer">
-           <img src="${product.thumbnail}" alt="${product.title}" />
+          <div class="container">
+          <div class="imageContainer">
+          <img src="${product.thumbnail}" alt="${product.title}" />
          </div>
          <div class="details">
            <h1>${product.title}</h1>
@@ -29,9 +29,25 @@ function displayProduct(product) {
              "addToCartbtn">Add To Cart</button>
            </div>
          </div>
-       </div>`;
+       </div>
+       `;
 
+  let review = "";
+  product.reviews.forEach((reviews) => {
+    review += `<div class="reviewData">
+                <h3>${reviews.reviewerName}</h3>
+                         
+                <p>
+                ${reviews.comment}
+                </p>
+                <h4>Rating:${reviews.rating}</h4>
+               </div>
+               `;
+  });
+  let btnRev=`<button onclick="location.href='review.html' ">Add Review</button>`
   productContainer.innerHTML = content;
+  reviewContainer.innerHTML = review;
+  btnContainer.innerHTML= btnRev;
 }
 
 fetchData();
